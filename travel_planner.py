@@ -263,15 +263,18 @@ def main():
                     cost = input("How much will it cost per night? ")
                     nights = input("How many nights will you be staying? ")
                     add_destination(destinationCount, destination, cost, nights)
+                    destinationCount+=1
                 if choice == 2:
                     method = input("What is the transportation method? ")
                     cost = input("How much will it cost? ")
                     add_transportation(transportationCount, method, cost)
+                    transportationCount+=1
                 elif choice == 3:
                     title = input("What is the name of the event? ")
                     date = input("What is the date? yyyy-mm-dd ")
                     cost = int(input("What is the cost? "))
                     add_event(itineraryCount, title, date, cost)
+                    itineraryCount+=1
                 if choice == 4:
                     break
         elif option == 2:
